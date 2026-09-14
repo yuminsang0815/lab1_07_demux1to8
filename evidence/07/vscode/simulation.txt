@@ -1,0 +1,16 @@
+ *  Executing task in folder PROJECT: C:\Users\a2391\AppData\Local\Microsoft\WindowsApps\python.EXE tools/lab1.py simulate 
+
+RUN C:\iverilog\bin\iverilog.EXE -g2012 -Wall -I C:\Users\a2391\lab1_07_demux1to8\src -I C:\Users\a2391\lab1_07_demux1to8\sim -s tb_demux_1x8 -o C:\Users\a2391\lab1_07_demux1to8\build\sim\run-cdf86389deb74c55a1fa17613acbd797\sim.vvp C:\Users\a2391\lab1_07_demux1to8\src\demux_1x8.v C:\Users\a2391\lab1_07_demux1to8\sim\tb_demux_1x8.sv
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- module demux_1x8 declared here: C:\Users\a2391\lab1_07_demux1to8\src\demux_1x8.v:1
+
+RUN C:\iverilog\bin\vvp.EXE -N C:\Users\a2391\lab1_07_demux1to8\build\sim\run-cdf86389deb74c55a1fa17613acbd797\sim.vvp
+VCD info: dumpfile wave.vcd opened for output.
+LAB1_PASS demux_1x8 cases=16
+C:\Users\a2391\lab1_07_demux1to8\sim\tb_demux_1x8.sv:19: $finish called at 160000 (1ps)
+
+시뮬레이션 실행 완료. 진리표·자기검사·파형으로 회로의 정답 여부를 확인하세요.
+WAVE C:\Users\a2391\lab1_07_demux1to8\build\sim\wave.vcd
+ *  Terminal will be reused by tasks, press any key to close it. 
